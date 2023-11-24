@@ -1,0 +1,17 @@
+.contact-form {
+    h3,h5 {
+        color: $main-color;
+    }
+    .contact-info{
+        li {
+            list-style: none;
+            
+                i {
+                    color: $main-color;
+                    
+                }
+            }
+        
+        
+    }
+}

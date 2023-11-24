@@ -1,0 +1,44 @@
+.about-banner{
+    #banner-img {
+        background-image: url(../images/banner-about.jpg);
+        background-repeat: no-repeat;
+        background-position: 50% 10%;
+        height: 250px;
+        background-size: cover;
+
+    }
+
+    }
+
+    .team-member {
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .social-icon {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: $custom-color; /* default to Bootstrap primary color if --custom-color is not defined */
+            text-align: center;
+            line-height: 40px;
+            font-size: 25px;
+            text-decoration: none;
+        }
+        
+        .social-icon i {
+            color: white;
+            line-height: 40px;
+        }
+
+        .card-img-top {
+            border: 1px solid #dee2e6; /* This color matches Bootstrap's card border color */
+            padding: 3px; /* Optional: Adds some space between the image and the border */
+        }
+        
+    }
+
+   

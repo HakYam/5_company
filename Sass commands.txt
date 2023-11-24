@@ -1,0 +1,6 @@
+install sass
+npm install -g sass
+
+
+sass --watch src/sass/style.scss:src/sass/style.css
+Sass is watching for changes. Press Ctrl-C to stop.

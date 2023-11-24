@@ -1,0 +1,324 @@
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+@import "./projects.scss";
+@import "./_variables.scss";
+@import "./blog.scss";
+@import "./contact.scss";
+@import "./about.scss";
+
+@font-face {
+    font-family: 'Cairo_regular';
+    src: url(../fonts/Cairo_Regular.ttf);
+}
+
+body {
+    font-family: "Cairo_regular" !important;
+}
+
+
+
+.top-menu {
+    .navbar {
+        font-weight: bold;
+        padding: 0px 100px !important;
+        background-color: #fff !important;
+
+        @media (max-width: 991px) {
+            padding: 0px 5px !important;
+
+        }
+
+        .navbar-nav {
+            li a {
+                transition-property: background-color;
+                transition-duration: 0.3s;
+
+                &:hover {
+
+                    @media (max-width: 991px) {
+                        border-bottom: none !important;
+                    }
+
+                    color: $main-color !important;
+                    background-color: $custom-color !important;
+                    border-bottom: $main-color 1px solid !important;
+                }
+            }
+
+        }
+    }
+}
+
+.carousel-indicators {
+    button {
+        width: 15px;
+        height: 15px;
+        
+        margin: 20px 5px 0px 0px;
+        border: 1px solid #838383 !important;
+        &.active {
+            background-color: $main-color;
+        }
+
+    }
+}
+
+.carousel-top {
+    .row {
+        display: block !important;
+    }
+
+    .carousel {
+        .carousel-item {
+            img {
+                height: 450px;
+            }
+        }
+
+        .carousel-caption {
+            h1 {
+                margin-bottom: 40px;
+
+                @media (max-width: 767px) {
+
+                    font-size: 20px !important;
+                    font-weight: bold;
+                }
+            }
+
+            h4 {
+                line-height: 1.7em;
+
+                @media (max-width: 767px) {
+
+                    font-size: 15px !important;
+                    padding: 0 50px !important;
+
+                }
+
+            }
+        }
+    }
+}
+
+
+.custom-btn {
+    padding: 10px 20px;
+    color: $main-color !important;
+    border: $main-color 1px solid !important;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    font-weight: bold;
+
+    &:hover,
+    &:focus {
+        color: $custom-color !important;
+        background-color: $main-color !important;
+        border: $custom-color 1px solid !important;
+    }
+}
+
+.custom-btn-main {
+    padding: 20px;
+    background-color: $main-color !important;
+    color: #fff;
+    font-weight: bold;
+    width: 250px;
+
+    &:hover {
+        color: black;
+    }
+}
+
+.who-are-we {
+    .custom-paragraph {
+        line-height: 2em;
+    }
+
+
+
+    .company-name {
+        color: $main-color;
+        font-weight: bold;
+    }
+
+}
+
+.project-details {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.latest-projects {
+    background-color: #ffffcc;
+
+    #latest-projects-carousel {
+        width: 80%;
+
+        .thumbnail2 {
+            position: relative;
+            margin-bottom: 20px;
+           
+
+            .caption2 {
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: rgba(65, 155, 155, 0.7);
+                max-width: 100%;
+                height: 100%;
+                padding: 2%;
+                text-align: center;
+                color: #fff;
+                opacity: 0;
+                visibility: hidden;
+                transform: translateY(-100%);
+                transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+                p{
+                    font-size: smaller;
+                }
+
+            }
+
+            .project-cat {
+                color: #fff;
+                background-color: $main-color;
+                position: absolute;
+                right: 0px;
+                top: 5%;
+                padding: 5px 10px;
+                border-bottom-left-radius: 10px;
+                border-top-left-radius: 10px;
+                z-index: 10;
+                font-size: 0.8em;
+
+            }
+            
+        }
+        button.carousel-control-next {
+            position: absolute;
+            right: -40px;
+            color: $main-color !important;
+            width: 0px;
+        }
+
+        button.carousel-control-prev {
+            position: absolute;
+            left: -40px;
+            color: $main-color !important;
+            width: 0px;
+        }
+    }
+}
+
+.clients {
+    background-color: #419898;
+}
+
+
+.latest-post {
+    .card-body {
+        width: 90%;
+        border: #cacaca 1px solid;
+        border-radius: 5px;
+        background-color: white;
+        position: relative;
+        top: -17px;
+        left: -5%;
+
+    }
+
+}
+footer {
+    height: 350px;
+    background-color: #393939;
+
+    h2 {
+        color: $custom-color;
+        font-size: 130%;   
+    }
+    
+    .line1 {
+        width: 75%;
+        border-top: 1px solid $custom-color;
+        margin: auto;
+    }
+    
+    #footer-nav-links {
+        a {
+            text-decoration: none;
+            color:#BBBBBB;
+            margin-left: 5px;
+            margin-right: 5px;
+            font-size: 90%;
+
+            &:hover,
+            &:focus {
+                color: $custom-color;
+            }
+        }
+    }
+
+#button-supsctibe {
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
+}
+    .form {
+        margin-right: 48px;
+        margin-left: 48px;
+        width: 35%;
+        margin: auto;
+        @media (max-width: 700px) {
+            width: 75%;
+        }
+
+        input {
+            background-color: #202020;
+
+            border: 0px;
+            border-top-right-radius: 8px !important;
+            border-bottom-right-radius: 8px !important;
+            border-top-left-radius: 0px !important;
+            border-bottom-left-radius: 0px !important;
+
+            &:focus {
+                border-color: $custom-color;
+                box-shadow: 0 0 4px 0 $custom-color;
+                background-color: #202020;
+                color: $custom-color
+            }
+        &::placeholder {
+            color: #cacaca;
+        }
+        }  
+    }
+
+    .btn-light {
+        &:hover,
+        &:focus {
+            color: $custom-color !important;
+            background-color: #363636 !important;
+            border: 1px solid $custom-color;
+            transition-property: border,color,background-color ;
+            transition-duration: 0.3s;
+        }
+    }
+
+    .copyright {
+        color: #969696;
+        font-size: 90%;
+        font-weight: bold;
+    }
+    
+    .copyright-link {
+        text-decoration: none !important;
+        cursor: pointer;
+
+        &:hover,
+        &:focus {
+            color: $custom-color;
+        }
+    }
+}
